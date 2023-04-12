@@ -42,8 +42,10 @@ public class Complexe {
 
     @Override
     public String toString() {
-        return partieReelle +
-                " " + partieImaginaire+"i";
+        return this.partieImaginaire>0?
+                partieReelle + "+" + partieImaginaire+"i" :
+                partieReelle + "" + partieImaginaire+"i";
+
     }
 
 }
